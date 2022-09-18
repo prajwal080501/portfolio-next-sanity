@@ -22,8 +22,8 @@ const Hero = (props: Props) => {
             <Image src={image} className="relative rounded-full h-52 w-22 mx-auto" />
 
             <div className='z-20'>
-                <h2 className='text-sm font-bold uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
-                <h1 className='text-3xl lg:text-6xl font-semibold px-10'>
+                <h2 className='text-xs md:text-sm font-bold uppercase text-gray-500 pb-2 tracking-[10px] md:tracking-[15px]'>Software Engineer</h2>
+                <h1 className='text-xl md:text-3xl lg:text-6xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor='#F7AB0A' />
                 </h1>
