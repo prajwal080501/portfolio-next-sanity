@@ -25,13 +25,13 @@ const Hero = (props: Props) => {
                 <h2 className='text-sm font-bold uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
                 <h1 className='text-3xl lg:text-6xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>
-                    <Cursor cursorColor='#F7ABOA' />
+                    <Cursor cursorColor='#F7AB0A' />
                 </h1>
                 <motion.div
-                initial={{opacity:0, y:-100}}
-                animate={{opacity:1, y:0}}
-                transition={{duration:2.5}}
-                 className='pt-5'>
+                    initial={{ opacity: 0, y: -100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2.5 }}
+                    className='pt-5'>
                     <Link href="#about"><button className="heroButton">About</button></Link>
                     <Link href="#skills"><button className="heroButton">Skills</button></Link>
                     <Link href="#experience"><button className="heroButton">Experience</button></Link>
