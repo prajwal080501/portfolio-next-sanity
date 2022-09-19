@@ -21,7 +21,7 @@ const About = (props: Props) => {
                     transition={{ duration: 1.5 }}
                     viewport={{once:true}}
                     className='text-base tracking-wide md:text-xl w-screen md:w-fit p-1 pb-3 md:p-0'>
-                    Hi! I'm Prajwal. I'm a senior at Nowrosjee Wadia College under Savitribai Phule Pune University graduating in 2022 with in-depth experience in Web Development domain both in front-end as well as back-end.
+                    Hi! I&apos;m Prajwal. I&apos;m a senior at Nowrosjee Wadia College under Savitribai Phule Pune University graduating in 2022 with in-depth experience in Web Development domain both in front-end as well as back-end.
                     Familiar with React a JavaScript library. Next JS a React framework. Hands on experience in designing web pages using Vanilla CSS, Bootstrap, Tailwind CSS, Material UI, Styled components.
 
                 </motion.p>
