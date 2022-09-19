@@ -17,9 +17,9 @@ const Hero = (props: Props) => {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles/>
-            <Image src={image} className="relative rounded-full h-52 w-22 mx-auto object-cover" alt="profile" />
+            <Image src={image} className="relative drop-shadow-2xl rounded-full h-52 w-22 mx-auto object-cover" alt="profile" objectFit='contain' />
             <div className='z-20'>
-                <h2 className='text-xs uppercase text-gray-500 pb-2 tracking-[10px] md:tracking-[15px]'>Software Engineer</h2>
+                <h2 className='text-xs md:text-md uppercase text-gray-400 pb-2 tracking-[10px] md:tracking-[15px]'>Software Engineer</h2>
             <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold px-10'>
                 <span className=' '>{text}</span>
                 <Cursor cursorColor='#f7ab0a' />
