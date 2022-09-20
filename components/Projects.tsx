@@ -9,7 +9,7 @@ const Projects = (props: Props) => {
             <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 font-bold md:text-2xl pb-10 mb-48 z-10'>Projects</h3>
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  '>
                 {projects.map(((project,i)=> (
-                    <div className='w-screen flex-shrink-0 flex flex-col space-y-5 p-20md:p-44 h-screen items-center justify-center snap-center text-center'>
+                    <div key={i} className='w-screen flex-shrink-0 flex flex-col space-y-5 p-20md:p-44 h-screen items-center justify-center snap-center text-center'>
                         <img src="https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Logo.wine.svg" className='h-80 w-80 mx-auto' alt="" />
                         <div>
                             <h4>
