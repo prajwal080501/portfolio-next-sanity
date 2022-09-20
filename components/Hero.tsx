@@ -15,7 +15,7 @@ const Hero = (props: Props) => {
         delaySpeed: 2000,
     })
     return (
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+        <div className='h-screen scroll-smooth flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles/>
             <Image src={image} className="relative drop-shadow-2xl rounded-full h-52 w-22 mx-auto object-cover" alt="profile" objectFit='contain' />
             <div className='z-20'>
