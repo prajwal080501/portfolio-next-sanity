@@ -58,20 +58,17 @@ const Contact = ({ }: Props) => {
             </p>
           </div>
         </div>
-        <motion.form
+        <form
           onSubmit={handleSubmit(onSubmit)}
-          initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
           className='flex flex-col px-8 w-[95vw] pb-16 space-y-2 md:w-fit mx-auto'>
           <div className='flex space-y-2 md:space-y-0 md:space-x-2 flex-col md:flex-row w-full '>
             <input {...register('name')} className='contactInfo' placeholder="Name" type="text" />
-            <input {...register("email")} placeholder='Email' className='contactInfo' type="email" />
+            <input {...register('email')} className='contactInfo' placeholder="Email" type="text" />
           </div>
           <input {...register("subject")} className='contactInfo' placeholder='Subject' type="text" />
           <textarea {...register("message")} placeholder='Message' className="contactInfo" id="" />
           <button type='submit' className='bg-gradient-to-r from-[#f7ab0a]/100 to-orange-600 py-3 px-10 rounded-md text-black font-bold text-lg hover:bg-[#f7ab0a]/60 active:scale-95 duration-200 ease-in-out shadow-xl active:shadow-sm'>Submit</button>
-        </motion.form>
+        </form>
       </div>
     </div>
   )

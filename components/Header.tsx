@@ -15,6 +15,7 @@ const Header = (props: Props) => {
                 <SocialIcon fgColor="gray" bgColor="transparent" url="https://www.youtube.com/channel/UCQdcHzF8tGL_Ska-Hj5x0RQ" network="youtube" className='hover:scale-125 duration-300 hover:text-white' />
                 <SocialIcon fgColor="gray" bgColor="transparent" url="https://www.instagram.com/prajwalladkat0805/" network="instagram" className='hover:scale-125 duration-300 hover:text-white' />
                 <SocialIcon fgColor="gray" bgColor="transparent" url="https://github.com/prajwal080501" network="github" className='hover:scale-125 duration-300 hover:text-white' />
+                <SocialIcon fgColor="gray" bgColor="transparent" url="https://www.linkedin.com/in/prajwalladkat/" network="linkedin" className='hover:scale-125 duration-300 hover:text-white' />
 
             </motion.div>
             <motion.div
