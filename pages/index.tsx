@@ -43,14 +43,14 @@ const Home: NextPage = () => {
       </section>
 
 
-      <footer className='sticky bottom-5 w-full cursor-pointer'>
+      <footer className='sticky bottom-20 md:bottom-5 w-full cursor-pointer'>
         <div
           className='flex items-center justify-center'>
           <Link href="#hero">
             <motion.img
-            initial={{opacity:0}}
-            whileInView={{opacity:1, rotate:360}}
-            transition={{duration:1.5}}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, rotate: 360 }}
+              transition={{ duration: 1.5 }}
               className='w-10 h-10 rounded-full hover:scale-110 drop-shadow-xl filter grayscale hover:grayscale-0 duration-200 ease-in-out  cursor-pointer' src="https://i.postimg.cc/Kz4s0dMK/Orange-and-White-Modern-Simple-Technology-You-Tube-Icon.png" alt="" />
           </Link>
 
