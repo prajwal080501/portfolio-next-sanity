@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Link from "next/link"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
 import BackgroundCircles from './BackgroundCircles'
-import { Info, PageInfo } from '../typings'
+import { Info } from '../typings'
 import { urlFor } from '../sanity'
 
 type Props = {info: Info}

@@ -11,9 +11,8 @@ import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
 import { motion } from "framer-motion"
 import { fetchSkills } from '../utils/fetchSkills'
-import { fetchPageInfo } from '../utils/fetchPageInfo'
 import { fetchProjects } from '../utils/fetchProjects'
-import { Skill, Project, PageInfo, Social, Info, SkillSet } from '../typings'
+import { Skill, Project, Social, Info, SkillSet } from '../typings'
 import { fetchSocials } from '../utils/fetchSocials'
 import { fetchInfo } from '../utils/fetchInfo'
 import { fetchSkillset } from '../utils/fetchSkillset'
@@ -21,13 +20,12 @@ import { fetchSkillset } from '../utils/fetchSkillset'
 type Props = {
   skills: Skill[]
   projects: Project[]
-  pageInfo: PageInfo
   social: Social[]
   info: Info,
   skillset: SkillSet[]
 }
 
-const Home = ({ pageInfo, skillset, info, projects, skills, social }: Props) => {
+const Home = ({ skillset, info, projects, skills, social }: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scroll-smooth scroll-p-5'>
       <Head>
@@ -85,7 +83,6 @@ export default Home
 
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
   const info: Info = await fetchInfo();
   const projects: Project[] = await fetchProjects();
   const skills: Skill[] = await fetchSkills();
@@ -96,7 +93,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     props: {
       skills,
       projects,
-      pageInfo,
       social,
       info,
       skillset
