@@ -22,10 +22,9 @@ type Props = {
   projects: Project[]
   social: Social[]
   info: Info,
-  skillset: SkillSet[]
 }
 
-const Home = ({ skillset, info, projects, skills, social }: Props) => {
+const Home = ({ info, projects, skills, social }: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scroll-smooth scroll-p-5'>
       <Head>
@@ -87,7 +86,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const projects: Project[] = await fetchProjects();
   const skills: Skill[] = await fetchSkills();
   const social: Social[] = await fetchSocials();
-  const skillset: SkillSet[] = await fetchSkillset();
 
   return {
     props: {
@@ -95,7 +93,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       social,
       info,
-      skillset
     },
     revalidate: 10,
   }
