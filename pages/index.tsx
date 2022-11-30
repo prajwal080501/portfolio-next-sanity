@@ -40,9 +40,9 @@ const Home = ({ info, projects, skills, social }: Props) => {
         <About info={info} />
       </section>
 
-      {/* <section id="experience" className='snap-center'>
+      <section id="experience" className='snap-center'>
         <WorkExperience />
-      </section> */}
+      </section>
 
       <section id="skills" className='snap-start'>
         <Skills skills={skills} />
@@ -86,6 +86,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const projects: Project[] = await fetchProjects();
   const skills: Skill[] = await fetchSkills();
   const social: Social[] = await fetchSocials();
+  const experience = await fetchSkillset();
 
   return {
     props: {

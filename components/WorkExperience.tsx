@@ -23,9 +23,6 @@ const WorkExperience = (props: Props) => {
                 <ExperienceCard />
                 <ExperienceCard />
 
-
-
-
             </div>
         </motion.div>
     )
