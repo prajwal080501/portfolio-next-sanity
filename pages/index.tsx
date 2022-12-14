@@ -31,7 +31,7 @@ const Home = ({ info, projects, skills, social }: Props) => {
         <title>Prajwal&apos;s Portfolio</title>
       </Head>
       <Header social={social} info={info} />
-
+{/* 
       <section id="hero" className='snap-start'>
         <Hero info={info} />
       </section>
@@ -71,7 +71,9 @@ const Home = ({ info, projects, skills, social }: Props) => {
 
 
         </div>
-      </footer>
+      </footer> */}
+
+      <h2 className='text-2xl text-center'>This is a test</h2>
 
     </div>
   )
@@ -81,20 +83,20 @@ export default Home
 
 
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const info: Info = await fetchInfo();
-  const projects: Project[] = await fetchProjects();
-  const skills: Skill[] = await fetchSkills();
-  const social: Social[] = await fetchSocials();
-  const experience = await fetchSkillset();
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const info: Info = await fetchInfo();
+//   const projects: Project[] = await fetchProjects();
+//   const skills: Skill[] = await fetchSkills();
+//   const social: Social[] = await fetchSocials();
+//   const experience = await fetchSkillset();
 
-  return {
-    props: {
-      skills,
-      projects,
-      social,
-      info,
-    },
-    revalidate: 10,
-  }
-}
+//   return {
+//     props: {
+//       skills,
+//       projects,
+//       social,
+//       info,
+//     },
+//     revalidate: 10,
+//   }
+// }
