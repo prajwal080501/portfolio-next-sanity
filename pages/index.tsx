@@ -30,7 +30,7 @@ const Home = ({ info, projects, skills, social }: Props) => {
       <Head>
         <title>Prajwal&apos;s Portfolio</title>
       </Head>
-      <Header social={social} info={info} />
+      {/* <Header social={social} info={info} /> */}
 {/* 
       <section id="hero" className='snap-start'>
         <Hero info={info} />
