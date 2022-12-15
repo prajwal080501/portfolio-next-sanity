@@ -5,7 +5,7 @@ export const fetchInfo = async () => {
 
     const data = await res.json();
 
-    const info: Info[] = data.info;
+    const info: Info = data.info;
 
 
     return info;
